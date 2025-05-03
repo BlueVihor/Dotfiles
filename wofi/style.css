@@ -1,0 +1,54 @@
+window {
+  font-family: "DejaVu Sans", "Font Awesome 5 Free";
+  margin: 0px;
+  border: 2px solid rgb(138, 173, 244);
+  background-color: rgb(24, 25, 38);
+  border-radius: 10px;
+}
+
+#input {
+  margin: 5px;
+  border: solid;
+  outline: solid;
+  color: #f8f8f2;
+  background-color: rgba(55, 59, 65, 0.95);
+}
+
+#inner-box {
+  margin: 5px;
+  border: 0px solid;
+  outline: solid;
+  background-color: transparent;
+}
+
+#outer-box {
+  margin: 5px;
+  border: 0px solid;
+  background-color: transparent;
+}
+
+#scroll {
+  margin: 0px;
+  border: 0px solid;
+}
+
+#text {
+  margin: 5px;
+  border: 0px solid;
+  color:#cad3f5 ;
+}
+
+#entry {
+  border: 0px solid;
+}
+
+#entry:focus {
+  border: 0px solid;
+}
+
+#entry:selected {
+  background-color: rgb(54, 58, 79) ;
+  border-radius: 3px;
+  border: 0px solid;
+  outline: solid;
+}
