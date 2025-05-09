@@ -1,0 +1,57 @@
+{  
+  "layer": "top",
+  "position": "top",
+  "reload_style_on_change": true,
+  "modules-left": ["custom/logo","custom/activewindow","hyprland/workspaces","battery"],
+  "modules-center": ["custom/wayves"],
+  "modules-right": ["custom/language","wireplumber","network","bluetooth","clock"],
+  "custom/logo": {
+    "format": "󰣇  ",
+    "on-click": "~/.config/waybar/scripts/power-menu.sh"
+  },
+  "custom/activewindow": {
+    "format":"{}",
+    "exec": "~/.config/waybar/scripts/activewindow.sh",
+    "interval": 1
+  },
+  "hyprland/workspaces": {
+    "format": "{id}",
+    "active-only": true
+  },
+  "battery": {
+    "bat": "BAT0",
+    "format": " {capacity}%",
+    "format-charging": "{capacity}% charging",
+    "interval": 1,
+    "class": "power"
+        },
+    "custom/wayves": {
+      "format": "{}",
+      "exec": "python ~/wayves/wayves.py"
+    },
+            "network": {
+            "format-wifi": "  ",
+            "on-click": "kitty nmtui",
+            "tooltip":false
+        },
+        "bluetooth": {
+            "format-on": " ",
+            "on-click": "blueberry",
+            "tooltip":false
+        },
+        
+        "clock": {
+            "format": " {:%I:%M:%S %p}",
+            "interval": 1,
+            "tooltip":false
+        },
+        "wireplumber":{
+            "format":"{icon}  {volume}%",
+            "format-muted":"   {volume}%",
+            "format-icons":[" ", " ", " "],
+            "tooltip":false,
+            "on-click":"pavucontrol"
+
+
+        }
+}

@@ -1,0 +1,87 @@
+@define-color background transparent;
+@define-color foreground #cdd6f4;
+@define-color color1 #7E99A3;
+@define-color color2 #A5BFCC;
+@define-color font #A5BFCC;
+@define-color hover #DFF2EB;
+
+* {
+    font-size:15px;
+    font-family:JetBrains Mono;
+}
+window#waybar{
+    all:unset;
+    background-color: transparent;
+}
+.modules-left, .modules-center , .modules-right {
+    margin-top: -7px;
+    margin-bottom: -10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+}
+.modules-left {
+    padding:10px;
+}
+.modules-center {
+    padding:10px;
+    min-width: 150.5px;
+}
+.modules-right {
+    padding:10px;
+}
+tooltip {
+    color: @font;
+}
+#custom-alacritty:hover , #custom-control:hover , #custom-gimp:hover , #custom-nemo:hover , #custom-code:hover , #custom-code:hover , #custom-zen:hover , #clock:hover,#bluetooth:hover,#network:hover, #custom-cpu:hover,#custom-memory:hover,#custom-gpu:hover , #custom-colorpicker:hover , #custom-power:hover , #wireplumber:hover{
+    transition: all .3s ease;
+    color:@hover;
+}
+
+
+#workspaces.active {
+    padding: 0px 5px;
+    color: @font;
+}
+
+#workspaces button.active {
+  color: @font;
+
+}
+
+#group-expand{
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+#custom-expand{
+    padding: 0px 5px;
+    color: @font;
+    transition: all .3s ease; 
+}
+#custom-expand:hover{
+    color:@hover
+}
+
+#custom-logo, #custom-activewindow, #battery, #custom-wayves, #custom-language, #wireplumber, #network, #bluetooth, #clock{
+    padding: 0px 5px;
+    transition: all .3s ease; 
+    color:@font;
+
+}
+#battery.power {
+  color: #A5BFCC;
+}
+#hyprland-language{
+  color:@font;
+  background:@font;
+}
+
+#hyprland-language.us {
+  background: @font;
+  color: @font;
+}
+
+#custom-endpoint{
+    color:transparent;
+
+}
